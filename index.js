@@ -5,7 +5,6 @@ import booksRoute from './routes/booksRoute.js';
 import courseBooksRoute from './routes/courseBooksRoute.js';
 import tempBooksRoute from './routes/tempBooksRoute.js'
 import userRoute from './routes/userRoute.js';
-import { URI, PORT } from './config.js';
 
 const app = express();
 app.use(express.json());
