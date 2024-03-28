@@ -27,7 +27,7 @@ app.use('/tempbooks', tempBooksRoute);
 app.use('/coursebook', courseBooksRoute);
 
 mongoose
-    .connect(process.env.URI || URI)
+    .connect(process.env.URI)
     .then(() => {
         console.log('App connected to database.');
         app.listen(process.env.PORT || 5555, () => {
