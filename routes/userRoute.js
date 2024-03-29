@@ -7,7 +7,7 @@ const router = express.Router();
 // Register route
 router.post('/register', async (req, res) => {
     try {
-        const { email, password, phone, fname, lname, college } = req.body;
+        const { email, password, phone, fname } = req.body;
 
         // Check if username and email are unique
         const existingUser = await User.findOne({ email });
